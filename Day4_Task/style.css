@@ -1,0 +1,306 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:sans-serif;
+}
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+main{
+    height: 100%;
+    width: 100%;
+    padding: 2% 5%;
+    
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navLeft h2{
+    font-family: "Playfair Display", serif;
+    font-size: 35px;
+    font-weight: 600;
+
+}
+
+.navCenter {
+    display: flex;
+    gap: 30px;
+    font-weight: 500;
+    cursor: pointer;
+   
+}
+ 
+.navCenter p:hover{
+    text-decoration: underline;
+    color: blue;
+    text-underline-offset: 5px;
+
+}
+.navRight i{
+    display: inline-block;
+    margin-left: 20px;
+    font-size: 25px;
+    cursor: pointer;
+    transition:all 0.5s;
+
+}
+.navRight i:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 1px  8px rgba(66, 66, 66, 0.815);
+    border-radius: 5px;
+    transition: .2s;
+}
+.ri-shopping-bag-line{
+    position: relative;
+}
+.ri-shopping-bag-line span{
+    position: absolute;
+    background: #5c5c5c;
+    font-size: 11px;
+    padding: 3px 5px;
+    border-radius: 50%;
+    color: white;
+    top: -2px;
+    right: 0px;
+    transition: 0.3s ease;
+}
+
+ 
+.content{
+    display: grid;
+    grid-template-columns: 40% 50% 10%;
+    margin-top: 25px;
+   
+    padding-bottom: 100px;
+}
+.section1 p{
+    font-size:medium;
+    color: rgba(12, 12, 12, 0.836);
+}
+ 
+.topC img{
+    width: 25px;
+    
+}
+.topC p{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    letter-spacing: 2px;
+}
+.topC h1{
+    font-family: "Playfair Display", serif;
+    font-size: 100px;
+    font-weight: 100;
+    letter-spacing: 2px;
+    line-height: 90px;
+    color: rgb(27, 27, 27);
+}
+.topC strong{
+    display: inline-block;
+    border: 1px solid  #5c5c5c;
+    width: 100px;
+}
+
+.textG{
+    margin-top: 20px;
+    /* border:  1px solid; */
+    letter-spacing: 1px;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.colorD{
+    display: flex;
+    gap: 20px;
+}
+.colorD span{
+    display: inline-block;
+    height: 20px;
+    width:20px ;
+    background: #000;
+    border-radius: 50%;
+}
+.colorD :nth-child(2){
+     background: #6c725d;
+}
+.colorD :nth-child(3){
+     background: #ecc390;
+}
+.colorD :nth-child(4){
+     background: #e7817f;
+}
+
+.detl span{
+    display: inline-block;
+    border: 0.8px solid rgba(49, 49, 49, 0.884);
+    height: 0;
+    width: 60px;
+    transform: translateX(10px);
+}
+.icon-text{
+    margin-top: 20px;
+    display: flex;
+    gap: 20px; 
+    position: relative;
+    left: -25px;
+   
+}
+.icon-text div{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+    
+   
+    
+}
+.icon-text img{
+    width: 40px;
+    background: #0202023a;
+    padding: 5px;
+    border-radius: 10px;
+}
+.icon-text p{
+    margin-top: 10px;
+    line-height: 20px;
+    font-weight: 600; 
+    text-align: center;
+    letter-spacing: 0.8px;
+    
+    
+}
+ 
+.image{
+   
+    padding: 0 10% 0 10%;
+    height: 80%;
+    width: 100%;
+    margin-bottom: 20px;
+    position: relative;
+                        
+  
+}
+.img{
+    width: 100%;
+    height: 100%;
+    background-image:url(/Front_End/Css_BasicToAdvance/girl.jpeg);
+    background-position: center;
+    background-size:100%;
+    border-radius: 10px;
+     
+    transition:all .3s;
+}
+.img:hover{
+    background-size: 110%;
+    transition: 1s;
+     
+}
+.img span{
+    
+    background: rgba(253, 254, 255, 0.801);
+    font-weight: 400;
+    padding: 10px;
+    border-radius: 10px;
+}
+.img p{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 30px;
+    background: #a3a3a342;
+    border-radius: 20px;
+}
+
+.AddToBag{  
+    width: max-content;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    background: #5b6149;
+    color: rgb(243, 242, 242);
+    font-weight: 100;
+    gap: 10px;
+    position: absolute;
+    bottom: 10px;
+    right: 34px;
+    cursor: pointer;
+    transition: 0.3s;
+
+}
+.AddToBag i{
+    font-size: 1.5rem;
+    
+     
+}
+.AddToBag strong{
+    font-size:0.8rem ;
+}
+.AddToBag:hover{
+    transform: translateY(-10px);
+    transition: 0.1s;
+    background: #535a3a;
+}
+
+.ProductInfo{
+    border: 1px solid beige;
+    box-shadow: 0 0 5px rebeccapurple;
+    display: flex;
+    font-weight: 100;
+    padding:15px 30px;
+    border-radius: 10px;
+    gap: 20px;
+    color: #3f442b;
+}
+.ProductInfo .grop{
+    display: flex;
+    gap: 10px;
+}
+.ProductInfo i{
+    font-size: 2rem;
+    color: #616d35;
+}
+.section3{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+}
+.section3 .imgS{
+    border-radius: 20px;
+    background: #000;
+    height: 100px;
+    width: 100px;
+    background-size: cover;
+    background-position: center;
+    border: 2px solid rgb(145, 138, 38);
+    cursor: pointer;
+    transition: .4s;
+}
+
+#img1{
+    background-image: url(/Front_End/Css_BasicToAdvance/girl.jpeg);
+}
+#img2{
+    background-image: url(/Front_End/Css_BasicToAdvance/kambal.jpeg);
+}
+#img3{
+    background-image: url(/Front_End/Css_BasicToAdvance/WhatsApp\ Image\ 2026-10-11\ at\ 8.44.29\ AM.jpeg);
+}
+#img4{
+    background-image: url(/Front_End/Css_BasicToAdvance/full.jpeg);
+}
+.section3 .imgS:hover{
+    transform: scale(1.1);
+    border-color: #3f442b;
+    transition: .2s;
+}
